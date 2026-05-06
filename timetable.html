@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>시간표</title>
+
+<style>
+    body {
+        font-family: "맑은 고딕", sans-serif;
+        background: linear-gradient(135deg, #ffcdd2, #c8e6c9);
+        margin: 0;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* 제목 */
+    .title {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #1b5e20;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        background-color: rgba(255, 255, 255, 0.92);
+        padding: 12px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 4px;
+    }
+
+    th, td {
+        width: 100px;      /* 줄임 */
+        height: 65px;      /* 줄임 */
+        text-align: center;
+        vertical-align: middle;
+        font-size: 12px;   /* 줄임 */
+        border-radius: 8px;
+        transition: 0.2s;
+        cursor: pointer;
+        padding: 3px;
+    }
+
+    /* 요일 */
+    th {
+        background-color: #81c784;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* 교시 */
+    .period {
+        background-color: #2e7d32;
+        color: white;
+        font-weight: bold;
+        width: 80px;
+    }
+
+    /* 과목 */
+    .subject {
+        background-color: #e8f5e9;
+        color: #1b5e20;
+    }
+
+    /* 점심시간 */
+    .lunch {
+        background-color: #c8e6c9;
+        font-weight: bold;
+    }
+
+    /* hover */
+    td:hover {
+        background-color: #ef5350 !important;
+        color: white;
+        transform: translateY(-2px);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="title">📅 시간표</div>
+
+<div class="container">
+
+<table>
+    <tr>
+        <th>교시</th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+    </tr>
+
+    <tr>
+        <td class="period">1</td>
+        <td class="subject">자료<br>구조</td>
+        <td class="subject">시스템<br>프로그래밍</td>
+        <td class="subject">시스템<br>프로그래밍</td>
+        <td class="subject">응용<br>프로그래밍<br>개발</td>
+        <td class="subject">스포츠<br>문화</td>
+    </tr>
+
+    <tr>
+        <td class="period">2</td>
+        <td class="subject">응용<br>프로그래밍<br>개발</td>
+        <td class="subject">한국사1</td>
+        <td class="subject">미술<br>(미술실)</td>
+        <td class="subject">문학</td>
+        <td class="subject">응용<br>프로그래밍<br>개발</td>
+    </tr>
+
+    <tr>
+        <td class="period">3</td>
+        <td class="subject">문학</td>
+        <td class="subject">시스템<br>프로그래밍</td>
+        <td class="subject">응용<br>프로그래밍<br>개발</td>
+        <td class="subject">시스템<br>프로그래밍</td>
+        <td class="subject">응용<br>프로그래밍<br>개발</td>
+    </tr>
+
+    <tr>
+        <td class="period">4</td>
+        <td class="subject">한국사1</td>
+        <td class="subject">응용<br>프로그래밍<br>개발</td>
+        <td class="subject">응용<br>프로그래밍<br>개발</td>
+        <td class="subject">시스템<br>프로그래밍</td>
+        <td class="subject">문학</td>
+    </tr>
+
+    <tr>
+        <td class="period">점심</td>
+        <td class="lunch" colspan="5">점심시간</td>
+    </tr>
+
+    <tr>
+        <td class="period">5</td>
+        <td class="subject">시스템<br>프로그래밍</td>
+        <td class="subject">영어1</td>
+        <td class="subject">영어1</td>
+        <td class="subject">한국사1</td>
+        <td class="subject">창체</td>
+    </tr>
+
+    <tr>
+        <td class="period">6</td>
+        <td class="subject">시스템<br>프로그래밍</td>
+        <td class="subject">미술<br>(미술실)</td>
+        <td class="subject">자율</td>
+        <td class="subject">자료<br>구조</td>
+        <td class="subject">창체</td>
+    </tr>
+
+    <tr>
+        <td class="period">7</td>
+        <td class="subject">시스템<br>프로그래밍</td>
+        <td></td>
+        <td></td>
+        <td class="subject">영어1</td>
+        <td></td>
+    </tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
